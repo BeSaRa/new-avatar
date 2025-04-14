@@ -7,6 +7,11 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'control',
+    loadComponent: () => import('@/views/control/control.component'),
+    pathMatch: 'full',
+  },
+  {
     path: '**',
     redirectTo: 'avatar',
   },
